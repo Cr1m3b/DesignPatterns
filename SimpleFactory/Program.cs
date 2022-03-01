@@ -10,24 +10,37 @@ namespace SimpleFactory
     {
         static void Main(string[] args)
         {
-            ICard card = SimpleFactory("1");
+            ICard card = SimpleFactory(Card.MasterCard);
+            ICard card2 = SimpleFactory(Card.VisaCard);
+            ICard card3 = SimpleFactory(Card.PaySafeCard);
             Console.WriteLine(card.GetCardType());
             Console.WriteLine(card.GetCreditLimit());
+            Console.WriteLine(card2.GetCardType());
+            Console.WriteLine(card2.GetCreditLimit());
+            Console.WriteLine(card3.GetCardType());
+            Console.WriteLine(card3.GetCreditLimit());
+
         }
 
-        public static ICard SimpleFactory(string choise)
+        public static ICard SimpleFactory(Card choise)
         {
             switch (choise)
             {
-                case "1": return new MasterCard();
-                case "2": return new VisaCard();
-                case "3": return new PaySafeCard();
+                case Card.MasterCard: return new MasterCard();
+                case Card.VisaCard: return new VisaCard();
+                case Card.PaySafeCard: return new PaySafeCard();
                 default: return null;
             }
         }
-        
     }
     
+    enum Card
+    {
+        MasterCard,
+        VisaCard,
+        PaySafeCard
+    }
+
     interface ICard
     {
         string GetCardType();

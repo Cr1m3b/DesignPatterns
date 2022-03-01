@@ -10,7 +10,9 @@ namespace FactoryMethod
     {
         static void Main(string[] args)
         {
-            ICard card = new MasterCard();
+            ICard card = new MasterCardFactory().CreateCard();
+            Console.WriteLine(card.GetCardType());
+            Console.WriteLine(card.GetCreditLimit());
         }
     }
     interface ICreateFactory
