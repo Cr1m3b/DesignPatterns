@@ -43,11 +43,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Factories\MasterCard\MasterCard.cs" />
+    <Compile Include="Factories\MasterCard\MasterCardFactory.cs" />
+    <Compile Include="Factories\PaySafeCard\PaySafeCard.cs" />
+    <Compile Include="Factories\PaySafeCard\PaySafeCardFactory.cs" />
+    <Compile Include="ManagerFactory\ICard.cs" />
+    <Compile Include="ManagerFactory\ICreateFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Factories\VisaCard\VisaCard.cs" />
+    <Compile Include="Factories\VisaCard\VisaCardFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
