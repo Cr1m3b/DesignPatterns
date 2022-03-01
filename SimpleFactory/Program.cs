@@ -25,8 +25,9 @@ namespace SimpleFactory
                 default: return null;
             }
         }
+        
     }
-
+    
     interface ICard
     {
         string GetCardType();

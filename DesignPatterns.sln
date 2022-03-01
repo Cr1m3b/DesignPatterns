@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFactory", "SimpleFact
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapaFactory", "MapaFactory\MapaFactory.csproj", "{89BFCEE1-104B-4F9B-A386-784FF1D04112}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Method", "Method\Method.csproj", "{8C3CD037-624D-4C95-B1C4-50BC47E538F3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "Method\FactoryMethod.csproj", "{8C3CD037-624D-4C95-B1C4-50BC47E538F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
